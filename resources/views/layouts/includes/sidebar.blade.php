@@ -20,7 +20,7 @@
             <!--begin::Sidebar Menu-->
             <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="{{ route('dashboard') }}" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
                         <i class="nav-icon bi bi-speedometer"></i>
                         <p>
                             Dashboard
@@ -28,7 +28,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('rumah-sakit.index') }}" class="nav-link active">
+                    <a href="{{ route('rumah-sakit.index') }}" class="nav-link {{ request()->is('rumah-sakit') ? 'active' : '' }}">
                         <i class="nav-icon bi bi-hospital"></i>
                         <p>
                             Rumah Sakit
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="{{ route('pasien.index') }}" class="nav-link {{ request()->is('pasien') ? 'active' : '' }}">
                         <i class="nav-icon bi bi-people"></i>
                         <p>
                             Pasien

@@ -21,4 +21,18 @@ class Pasien extends Model
         'alamat',
         'nomor_telepon',
     ];
+
+    protected $appends = [
+        'rumah_sakit_nama',
+    ];
+
+    public function rumahSakit()
+    {
+        return $this->hasOne(RumahSakit::class, 'id', 'id_rumah_sakit');
+    }
+
+    public function getRumahSakitNamaAttribute()
+    {
+        return $this->rumahSakit ? $this->rumahSakit->nama : null;
+    }
 }

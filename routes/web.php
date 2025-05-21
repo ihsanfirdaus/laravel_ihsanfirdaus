@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PasienController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RumahSakitController;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,12 @@ Route::middleware('auth')->group(function () {
     Route::get('rumah-sakit/{id}', [RumahSakitController::class, 'show'])->name('rumah-sakit.show');
     Route::put('rumah-sakit/{id}', [RumahSakitController::class, 'update'])->name('rumah-sakit.update');
     Route::delete('rumah-sakit/{id}', [RumahSakitController::class, 'destroy'])->name('rumah-sakit.destroy');
+    
+    Route::get('pasien', [PasienController::class, 'index'])->name('pasien.index');
+    Route::post('pasien', [PasienController::class, 'store'])->name('pasien.store');
+    Route::get('pasien/{id}', [PasienController::class, 'show'])->name('pasien.show');
+    Route::put('pasien/{id}', [PasienController::class, 'update'])->name('pasien.update');
+    Route::delete('pasien/{id}', [PasienController::class, 'destroy'])->name('pasien.destroy');
 });
 
 
