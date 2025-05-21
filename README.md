@@ -28,3 +28,9 @@ Sebelum memulai, pastikan sistem Anda memiliki:
 git clone https://github.com/ihsanfirdaus/laravel_ihsanfirdaus.git
 cd laravel_ihsanfirdaus
 
+### 2. install Dependency PHP
+
+```bash
+composer install
+
+
