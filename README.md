@@ -28,9 +28,43 @@ Sebelum memulai, pastikan sistem Anda memiliki:
 git clone https://github.com/ihsanfirdaus/laravel_ihsanfirdaus.git
 cd laravel_ihsanfirdaus
 ```
-### 2. install Dependency PHP
+### 2. Install Dependency PHP
 
 ```bash
 composer install
+```
+### 3. Salin File Environment
 
+```bash
+cp .env.example .env
+```
+Lalu ubah konfigurasi seperti
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+### 4. Generate Application Key
 
+```bash
+php artisan key:generate
+```
+### 5. Jalankan Migrasi dan Seeder
+
+```bash
+php artisan migrate --seed
+```
+### 6. Install NPM
+
+```bash
+npm install
+npm run dev
+```
+### 7. Jalankan Server
+
+```bash
+php artisan serve
+```
