@@ -11,7 +11,7 @@
 
 Ini adalah proyek berbasis Laravel 12. Dokumen ini menjelaskan langkah-langkah untuk setup dan menjalankan aplikasi secara lokal.
 
-## 🧾 Persyaratan Sistem
+## 🧾 Requirement
 
 Sebelum memulai, pastikan sistem Anda memiliki:
 
@@ -25,6 +25,6 @@ Sebelum memulai, pastikan sistem Anda memiliki:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/nama-proyek.git
-cd nama-proyek
+git clone https://github.com/ihsanfirdaus/laravel_ihsanfirdaus.git
+cd laravel_ihsanfirdaus
 
